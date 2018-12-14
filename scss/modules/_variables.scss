@@ -1,0 +1,113 @@
+// colors
+
+$primary: #8bc34a;
+$secondary: #e74c3c;
+$gray-200: #f5f5f5;
+$gray-300: #a6b5bb;
+$gray-400: #d4d4d4;
+$gray-500: #dde3e8;
+$gray-600: #f4f6f5;
+$gray-700: #e0e0e0;
+$gray-900: #707070;
+$gray-800: #b5b5b5;
+$light-gray: #f2f5f8;
+$green: #8bc34a;
+$red: #e74c3c;
+$red-2: #e52d27;
+$dark: #263238;
+$dark-2: #2f3c43;
+$cyan: #546e7a;
+$orange: #ffa726;
+$dark-green: #78ad39;
+$dark-blue: #70838d;
+$dark-blue-2: #37474f;
+$dark-blue-3: #88979f;
+$dark-blue-4: #697378;
+$light-blue: #42a5f5;
+$green-blue: #00bcd4;
+
+
+
+
+//socicons colors
+$facebook: #6370b6;
+$twitter: #64b5f6;
+$linkedin: #4f71ce;
+$pinterest: #d32f2f;
+
+//Body
+$body-bg: $gray-600;
+
+//Borders
+$border-color: $gray-500;
+
+// fonts
+
+$font-family-sans-serif: 'Roboto', sans-serif;
+
+$h1-font-size: 36px;
+$h2-font-size: 30px;
+$h3-font-size: 24px;
+$h4-font-size: 20px;
+$h5-font-size: 18px;
+
+$headings-color: $dark;
+
+$small-font-size: 0.875rem; //14px
+
+$font-size-sm: 0.75rem; //12px
+
+$heading-4-font-weight: bold;
+
+// buttons
+
+$btn-padding-y-lg: 15px;
+$btn-padding-x-lg: 30px;
+$btn-padding-y-sm: 10px;
+$btn-padding-x-md: 25px;
+$font-size-lg: 0.9375rem; //15px
+
+// Spacing
+
+$spacer: 1rem !default;
+$spacers: () !default;
+// stylelint-disable-next-line scss/dollar-variable-default
+$spacers: map-merge(
+                (
+                        0: 0,
+                        1: ($spacer * .25),
+                        2: ($spacer * .5),
+                        3: $spacer,
+                        4: ($spacer * 1.5),
+                        5: ($spacer * 3),
+                        6: ($spacer * 4),
+                        15: 15px,
+                        18: 18px,
+                        30: 30px,
+                        45: 45px,
+                        60: 60px,
+                        75: 75px,
+                        100: 100px,
+                        110: 110px,
+                        120: 120px
+                ),
+                $spacers
+);
+
+// cards
+
+$card-spacer-y: 0.35rem;
+$card-spacer-x: 1.8rem;
+$card-spacer-x-sm: 0.6rem;
+
+
+// links
+$link-hover-color: $cyan;
+$link-hover-decoration: none;
+
+
+//Container
+
+$container-max-widths: (
+  xl: 1200px
+) !default;

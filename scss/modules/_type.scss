@@ -1,0 +1,91 @@
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6{
+  &:last-child{
+    margin-bottom: 0;
+  }
+}
+
+h4, .h4 {
+  font-weight: $heading-4-font-weight;
+
+}
+
+// link
+a {
+  transition: 0.2s;
+}
+
+p:last-of-type {
+	margin-bottom: 0;
+}
+
+.listing {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+	li {
+		& + li {
+			margin-top: 15px;
+		}
+		span {
+			float: right;
+			color: $cyan;
+		}
+		&:before {
+			font-family: fontawesome;
+			content: '\f105';
+			padding-right: 10px;
+			color: $primary;
+		}
+	}
+}
+
+.inline-list {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 0;
+}
+
+@mixin social-button-colors($color_1, $color_2){
+	color: $color_1;
+	background-color: $color_2;
+	&:hover {
+		color: $color_2;
+		background-color: $color_1;
+	}
+}
+
+.btn-social-color {
+		&[class*="facebook"]{
+			@include social-button-colors($white , $facebook);
+		}
+		&[class*="twitter"]{
+			@include social-button-colors($white , $twitter);
+		}
+		&[class*="linkedin"]{
+			@include social-button-colors($white , $linkedin);
+		}
+		&[class*="pinterest"]{
+			@include social-button-colors($white , $pinterest);
+		}
+}
+
+img {
+	width: 100%;
+	max-width: 100%;
+}
+
+// dark section
+
+.dark-section{
+  background-color: $dark;
+  h1, h3, p{
+    color: #fff;
+  }
+  h3 a {
+    color: #fff;
+  }
+  h3 a:hover {
+    color: $primary;
+  }
+}
